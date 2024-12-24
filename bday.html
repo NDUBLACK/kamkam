@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="bday.css">
+    <link rel="icon" href="images/favicon.png" type="image">
+  </head>
+
+  <body>
+    <div class="overlay" id="overlay">
+      <h1>🎈 Click to View 🎉</h1>
+    </div>
+    <script>
+      // Overlay element
+      const overlay = document.getElementById('overlay');
+
+      // Add click event to overlay
+      overlay.addEventListener('click', () => {
+          // Remove overlay
+          overlay.style.display = 'none';
+
+          // Play audio
+          const audio = new Audio('audio/clapping.wav'); // Replace with your audio file path
+          audio.play().catch(error => {
+              console.error("Audio playback failed:", error);
+          });
+      });
+  </script>
+  <header>
+    <div class="container">
+      <div class="card">
+        <div class="outside">
+          <h1>Happy Birthday Kamkam!</h1>
+          <h3>Today, the flowers are bloomier, the sun is sunnier and life is awesomer - all because it is your birthday. May God bless you with abundant joy today and forever.</h3>
+        </div>
+        <div class="inside">
+          <img src="./images/cake.gif" alt="A cake gif" title="Blow your candles" class="picture">
+          <h3>Wishing you the biggest slice of happy today and always.</h3>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="frames frame1">
+          <img src="./images/img1.JPG" alt="Kamkam smiling" class="picture">
+          <p>Keep smiling, keep shining</p>
+        </div>
+        <div class="frames frame2">
+          <img src="./images/img2.JPG" alt="Kamkam looking beautiful" class="picture">
+          <p>May this celebration give you many happy memories</p>
+        </div>
+        <div class="frames frame3">
+          <img src="./images/img3.jpg" alt="Kamkam with family" class="picture">
+          <p>God bless you immensely and grant your good heart desires</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1"></script>
+    <script>
+        // Trigger confetti on page load
+        window.onload = () => {
+            const duration = 12 * 1000; // Duration in milliseconds
+            const end = Date.now() + duration;
+
+            (function frame() {
+                // Launch confetti bursts
+                confetti({
+                    particleCount: 3,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 }
+                });
+                confetti({
+                    particleCount: 3,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 }
+                });
+
+                // Repeat until time is up
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            })();
+        };
+      
+    </script>
+  </header>
+
+  <main>
+    <section class="gallery-page">
+      <div class="centertext">
+      <h2 class="heading-secondary">Memorable Moments</h2>
+      </div>
+      <p>This section brings to mind the many beautiful moments you shared with your friends and family in this past year. 19 heartfelt pictures from the last 365 days as you turn 19 today. By simply hovering on the image, you get to have an idea of what the picture is about. Sit back and relax as you take a concise glimpse on the last 365 days. Enjoy!
+      </p>
+
+      <div class="gallery box">
+        <img src="./images/mm1.jpg" alt="Memorable moments" title="End of 200LVL 1st semester exams">
+        <img src="./images/mm2.jpg" alt="Memorable moments" title="End of 200LVL 1st semester exams">
+        <img src="./images/mm3.jpg" alt="Memorable moments" title="A program at Indoor Sports Complex">
+        <img src="./images/mm4.jpg" alt="Memorable moments" title="A program at Indoor Sports Complex">
+        <img src="./images/mm5.jpg" alt="Memorable moments" title="Williams Ubong educational program">
+        <img src="./images/mm6.jpg" alt="Memorable moments" title="An outing with family">
+        <img src="./images/mm7.jpg" alt="Memorable moments" title="A football match">
+        <img src="./images/mm8.jpg" alt="Memorable moments" title="The football final against 400LVL">
+        <img src="./images/mm9.jpg" alt="Memorable moments" title="The induction at Fagcoop, June 12">
+        <img src="./images/mm10.jpg" alt="Memorable moments" title="The induction at Fagcoop, June 12">
+        <img src="./images/mm11.jpg" alt="Memorable moments" title="Nduoma's birthday">
+        <img src="./images/mm12.jpg" alt="Memorable moments" title="One beautiful day">
+        <img src="./images/mm13.jpg" alt="Memorable moments" title="Pamela's birthday">
+        <img src="./images/mm14.jpg" alt="Memorable moments" title="Pamela's invitation">
+        <img src="./images/mm15.jpg" alt="Memorable moments" title="Last practical in 300LVL">
+        <img src="./images/mm16.jpg" alt="Memorable moments" title="Last practical in 300LVL">
+        <img src="./images/mm17.jpg" alt="Memorable moments" title="After CHM310 examination">
+        <img src="./images/mm18.jpg" alt="Memorable moments" title="End of 300LVL 1st semester">
+        <img src="./images/mm19.jpg" alt="Memorable moments" title="IT days">
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="birthday-message-container">
+        <h2>Happy Birthday, Obiefuna Mirabell Kamsiochukwu Chiliotito!</h2>
+        <p>
+          Exactly 19 years ago today, God gifted the world an amazing soul. The natal day of this young lady is today, and she has grown to be a very beautiful, God-fearing, inspiring, and incredible person all around. She continually proves to be a blessing to her family, her friends, and everyone she comes in contact with. Words indeed cannot fully express how grateful I am to God for bringing this damsel into my life—a rare gem of a person and a wonder to her world.
+        </p>
+        <p>
+          Her name is <strong>Obiefuna Mirabell Kamsiochukwu Chiliotito</strong>. She is <strong>YOU</strong>! And as your name "Mirabell" implies, you have been a beauty and a wonder to all those you have come across. Only a week away, we celebrate Jesus Christ's birthday—such perfect timing for you to blow out your candles and make your wishes before Christmas.
+        </p>
+        <p>
+          And so, today, I delightfully join your family and friends in celebrating you. Today, I celebrate not just your birthday but the incredible person you are. You bring so much joy to every heart you touch and make life so much brighter for everyone around you. You never tire of helping your friends as long as you have the means to do so.
+        </p>
+        <p>
+          Thank you for everything you have done for me, most especially. Thank you for being God-fearing, as it was this character that drew me even closer to you. Thank you for understanding me even when I seem not to be understandable. Thank you for tolerating and putting up with some of my faults. Thank you for the Scriptures we have shared and the debates we have had, leading to learning :). Thank you for the gifts you have showered on me. Thank you for the times you cheered me up and supported me. Thank you for the laughter we have shared and for the few sad moments we have also encountered.
+        </p>
+        <p>
+          Thank you for the many times you called me because a lecturer was in class, attendance was being taken, practical reports were being submitted, or exams had already started. I am sincerely, from my heart, grateful for you. All these memories, and you, I will forever cherish and love.
+        </p>
+        <p>
+          And so, on this very day and beyond, I say to you, just as the LORD said to Moses in Numbers 6:22-26:
+        </p>
+        <blockquote>
+          "The LORD bless you and keep you.<br>
+          The LORD make His face shine upon you and be gracious to you.<br>
+          The LORD lift up His countenance upon you and give you peace."
+        </blockquote>
+        <p>
+          And may the blessings of Almighty God rest and abide with you today and forevermore. AMEN.
+        </p>
+        <p>
+          I wish you long life and prosperity together with good health. May you succeed in all your good life endeavors and be a source of pride to your family and friends. You shall not fail; neither shall you falter. You shall never be stranded. The LORD will continue to uphold and uplift you.
+        </p>
+        <p>
+          You are blessed, my dear. A thousand words put together would not be enough to tell how grateful I am to God for having you as a coursemate and for the platonic relationship we share. God bless you exceedingly. I love, love you. May all your dreams come true, and may happiness surround you always. AMEN.
+        </p>
+        <p>
+          <strong>Happy Birthday, Kamkam! 🎉🎂💖</strong>
+        </p>
+      </div>      
+    </section>
+   
+</main>
+<footer>
+  <p>
+    No Copyright - <a href="#">blackvibes.com</a>
+  </p>
+</footer>
+
+</body>
+</html>
